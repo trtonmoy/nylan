@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Laralink">
+    <!-- Favicon Icon -->
+    <link rel="icon" href="assets/img/logo.png" />
+    <!-- Site Title -->
+    <title> Tom</title>
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/slick.css">
+    <link rel="stylesheet" href="assets/css/plugins/animate.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+</head>
+<style>
+     #title1, #title2 {
+        font-weight: bold;
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+    #paragraph1, #paragraph2 {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+</style>
+
+<style>
+
+</style>
+<style type="text/css">
+      .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 99999;
+        border-radius: 10px;
+      }
+
+      .mod_content {
+        background-color: #131740;
+        width: 400px;
+        margin: 100px auto;
+        padding: 40px;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      /* Hide the modal when not displayed */
+      .hidden {
+        display: none;
+      }
+
+      #yesButton {
+        padding: 8px 28px;
+        margin-right: 15px;
+        outline: none;
+        border: none;
+        background-color: #ff5cbb;
+        color: #fff;
+        border-radius: 30px;
+        cursor: pointer;
+      }
+      #noButton {
+        padding: 8px 28px;
+        outline: none;
+        border: none;
+        background-color: #ff5cbb;
+        color: #fff;
+        border-radius: 30px;
+        cursor: pointer;
+      }
+      .faq_inner .card-header h4 button::before {
+        display: none !important;
+      }
+
+      @media screen and (max-width: 768px) {
+        .mod_content {
+          width: 95%;
+        }
+        .mob_space {
+          margin-top: 50px;
+        }
+      }
+    </style>
+
+<body class="cs-dark">
+    <!-- <div class="cs-preloader cs-white_bg cs-center">
+        <div class="cs-preloader_in">
+            <img src="assets/img/logo.png" alt="Logo">
+           
+        </div>
+    </div> -->
+     <div id="myModal" class="modal">
+          <div class="mod_content" style="background-color: #131740">
+            <p style="color: #fff; font-size: 17px">
+              Are you ready to explore
+              MommyMilkersGrok420Sonic10Obama6900TaylorSwiftInu?
+            </p>
+            <div
+              style="
+                text-align: center;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <img
+                src="/images/logo.png"
+                style="width: 100px; margin: 20px 0"
+                alt=""
+              />
+            </div>
+            <div
+              class="flex_dis"
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <button id="yesButton">Yes</button>
+              <button id="noButton">No</button>
+            </div>
+          </div>
+        </div>
+        <audio style="opacity: 1" id="closingAudio" src="/assets/img/audio.mp3"></audio>
+        
+    <!-- Start Header Section -->
+    <header class="cs-site_header cs-style1 cs-sticky-header cs-primary_color">
+        <div class="cs-main_header">
+            <div class="container">
+                <div class="cs-main_header_in">
+                    <div class="cs-main_header_left">
+                        <a class='cs-site_branding cs-accent_color' href='/'>
+              <img src="assets/img/logo.png" style="max-height: 60px;
+    height: 60px;min-width:60px;" alt="Logo"  width="auto" class="cs-hide_dark">
+              <img src="assets/img/logo.png" style="max-height: 60px;
+    height: 60px;min-width: 60px;" alt="Logo" class="cs-hide_white">
+             
+
+            </a>
+                    </div>
+                    <div class="cs-main_header_center">
+                        <div class="cs-nav">
+                          
+                            <ul class="cs-nav_list" style="font-size: 1.5rem;">
+                                <li><a href="tglink" style="color: #ECC874;" class="cs-smoth_scroll">Telegram</a>
+
+                                </li>
+                                <li><a href="twitterlink" style="color: #ECC874;" class="cs-smoth_scroll">Twitter</a></li>
+                                <li><a href="chartlink" style="color: #ECC874;" class="cs-smoth_scroll">Chart</a></li>
+
+                                <!-- <li><a href="#tokenomics" class="cs-smoth_scroll" style="color: #ECC874;">Tokenomics</a></li> -->
+                                <li><a href="buylink" style="color: #ECC874;" class="cs-smoth_scroll">Uniswap</a></li>
+                                <!-- <li><a href="" class="cs-smoth_scroll" style="color: #ECC874;">Contract</a></li> -->
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cs-main_header_right">
+                        <div class="cs-toolbox">
+
+                            <!-- <a class="cs-btn cs-btn_filed cs-accent_btn cs-modal_btn" style="color: black;" href="https://poocoin.app/tokens/0xa2dc507209691baE26f3a22f79231c48E573C7C1">
+                
+                <span>Chart</span>
+              </a> -->
+                            <!-- <a class="cs-btn cs-btn_filed cs-accent_btn cs-modal_btn" href="https:// Live New Pairs.volumizer.io" style="color: black
+                            ;">
+                <span>dAPP</span>
+              </a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header Section -->
+    <div class="cs-height_80 cs-height_lg_80"></div>
+
+<!-- type-write banner start-->
+
+
+ 
+<!-- type-write banner end-->
+    <!-- Start Hero -->
+    <section class="cs-hero cs-style1 cs-bg" style="background-image: linear-gradient(#4d74dfae,#4d74dfbf),url(/assets/img/bg.jpg);background-size: cover;background-position: center;" id="home">
+        <!-- <div class="cs-dark_overlay"></div> -->
+        <div class="container">
+           <div id="particles-js2" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></div>
+           <div class="row" style="display: flex;align-items: center;justify-content: center;">
+            <div class="col-md-7">
+ <div class="cs-hero_text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.35s" style="font-size: 1.2rem;">
+
+              <!-- type writer elements -->
+              <h1 id="title1" style="color:#FFE6BA;font-size:60px;width:98%;max-width:520px"> </h1>
+
+
+              <div id="paragraph1" class="para_ban"></div>
+   <!-- type writer elements -->
+
+                <!-- <h2 class="cs-hero_secondary_title cs-font_24 cs-font_18_sm" >🐻 <strong>$ Live New Pairs</strong> is a next Big Meme on bsc 🐻</h2> -->
+                <h2 class="cs-hero_secondary_title cs-font_24 cs-font_18_sm ca_pad">CA: <strong style="color: #fff;font-size:18px;word-break: break-all;">0x0000000000000000000000000000</strong></h2>
+                <div class="cs-btn_group">
+                    <!-- <a href="https://www.dextools.io/app/en/ether/pair-explorer/0xa3ceb0dd2df8ff35c0a047819fa430df3a6d5f3d" class="cs-btn cs-btn_filed cs-accent_btn" style="color: black
+                    ;"><span>Chart</span></a> -->
+                    <a href="tglink" class="btn1" ><span>Join Telegram</span></a>
+                    <a href="twitterlink" class="btn1" style="color: black
+                    ;"><span>Twitter</span></a><br>
+                   
+                </div>
+                <!-- <a href="chartlink" class="cs-btn cs-color1" style="margin-top: 20px;"><span> Chart</span></a> -->
+
+            </div>
+           
+            </div>
+             <div class="col-md-5">
+              <div class=" wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s" style="text-align: center;">
+                <img src="assets/img/cat.png" class="shake_img"  alt="Hero Image">
+
+            </div>
+            </div>
+           </div>
+           
+            
+        </div>
+    </section>
+    <!-- End Hero -->
+<!-- <div style="padding:90px 0">
+   <audio style="opacity: 1" id="closingAudio" src="/assets/img/audio.mp3"></audio>
+</div> -->
+    <!-- video section -->
+    <!-- <section>
+      
+    </section> -->
+    <!-- Start About -->
+    <section id="about" style="background-color:  #191919;padding-bottom: 40px;padding-top:60px">
+       
+        <div class="container">
+            <div class="row align-items-center flex-column-reverse-lg">
+                <div class="col-lg-6 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="cs-height_0 cs-height_lg_40"></div>
+                    <div class="cs-right_space_40">
+                        <div class="cs-seciton_heading cs-style1">
+                            <!-- <h1 class=" cs-font_28 cs-font_24_sm cs-gradient_color text-uppercase" style="font-size: 1.6rem;"><b>About Us</b></h1> -->
+                           <h2 class="cs-section_subtitle cs-m0 cs-font_36 cs-font_24_sm" style="color: #ECC874;">About Tom</h2> 
+                        </div>
+                        <div class="cs-height_20 cs-height_lg_20" ></div>
+                       <p style="color: #fff;">
+                       Tom, the iconic character from the timeless "Tom and Jerry" cartoon, has etched himself into the hearts of audiences worldwide with his enduring charm and comedic antics. As the feline half of the legendary cat-and-mouse duo, Tom Cat is known for his relentless pursuit of Jerry Mouse, resulting in a series of slapstick misadventures that have entertained generations. </p>
+                        <p style="color: #fff;">Despite his never-ending quest to catch the elusive Jerry, Tom's character is multifaceted, revealing moments of sympathy, frustration, and clever wit. His expressive face and animated body language convey a range of emotions that transcend language barriers, making "Tom and Jerry" a universally beloved classic. Tom's resilience, paired with his humorous interactions with Jerry, has made him an enduring symbol of animated comedy, securing his place in the pantheon of cartoon legends.</p>
+                       
+                       
+                        
+                    
+                        <div class="cs-height_25 cs-height_lg_15"></div>
+                        <div class="cs-btn_group">
+                            <!-- <a href= " class="cs-btn cs-btn_filed cs-accent_btn "><span>Contract </span></a> 
+                      <a href="https://link.medium.com/SzOSb0m8Rzb" class="cs-btn cs-btn cs-color1 "><span>Medium</span></a>  -->
+                       <a href="chart" class="btn1" ><span>Chart</span></a>
+                    <a href="buylink" class="btn1" style="color: black
+                    ;"><span>Buy Now</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 wow fadeInRight " data-wow-duration="1s " data-wow-delay="0.4s " >
+          <!-- <img src="assets/img/logo.png" style="max-width:450px;height: 350px; width:100%" class="rounded d_none" alt=" " > -->
+        
+         <video id="myVideo" width="640" height="360" autoplay controls loop>
+  <source src="assets/img/vid.mp4" type="video/mp4">
+    <source src="video.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video> 
+
+ <!-- <div class="video-container">
+    <video autoplay loop  playsinline>
+      <source src="assets/img/vid.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div> -->
+        </div>
+      </div>
+      
+     
+
+</div>
+</div>
+  </section> 
+  <!-- End About -->
+
+  <!-- Start Goals -->
+
+  <!-- tokenomics section start-->
+   <section id="tokenomics" style="position: relative; z-index: 1;" class="token_bg">
+    <div class="cs-height_70 cs-height_lg_40 "></div>
+    <div class="container ">
+      <div class="cs-seciton_heading cs-style1 wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.2s ">
+        <!-- <h3 class="cs-section_title cs-font_16 cs-font_14_sm cs-gradient_color " style="color: #FC427B;"> Live New Pairs Plan</h3> -->
+        <div style="text-align: center;">
+<img src="/assets/img/bn1.png" alt="" style="width:150px;max-width:95%;margin:0px 0 30px">
+
+
+        </div>
+
+        <h2 class="cs-section_subtitle cs-m0 cs-font_36 cs-font_24_sm " style="color: #fff;text-align: center;color:#000;font-size:50px;text-transform: uppercase;"> Tokenomics</h2>
+      </div>
+      <div class="cs-height_50 cs-height_lg_30 " style="margin-bottom:40px"></div>
+      <div class="cs-accent_seperator_1 cs-accent_color wow fadeInLeft " data-wow-duration="1s " data-wow-delay="0.4s "></div>
+      <div id="particles-js" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></div>
+    
+    </div>
+    <div class="wrapper" style="background-color: #000000c7;padding:30px 40px 0;border-radius:8px">
+        <div class="row wow fadeIn " data-wow-duration="1s " data-wow-delay="0.4s " style="align-items: center;justify-content: center;display: flex;">
+        <div class="col-lg-6 col-md-6 ">
+      <div class="tkn_text">
+         <h4> Ticker : $TOM</h4>
+         <h4> Supply : 10M</h4>
+         <h4> Tax : 0/0</h4>
+         <h4> Ca  : 0x00000000000000000</h4>
+      </div>
+
+        </div>
+        <div class="col-lg-6 col-md-6 text-center">
+          <img src="/assets/img/tkn2.png" alt="" style="width:100%;max-width:470px;margin:7px">
+        </div>
+         
+      </div>
+    </div>
+  </section>
+  <!-- tokenomics section end-->
+  
+  <!-- <section id="roadmap" style="position: relative; z-index: 1;background-color: ;">
+    <div class="cs-height_70 cs-height_lg_40 "></div>
+    <div class="container ">
+      <div class="cs-seciton_heading cs-style1 wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.2s ">
+       <h3 class="cs-section_title cs-font_16 cs-font_14_sm cs-gradient_color " style="color: #FC427B;"> Live New Pairs Plan</h3> 
+        <h2 class="cs-section_subtitle cs-m0 cs-font_36 cs-font_24_sm " style="color: #fff;">Roadmap</h2>
+      </div>
+      <div class="cs-height_50 cs-height_lg_30 "></div>
+      <div class="cs-accent_seperator_1 cs-accent_color wow fadeInLeft " data-wow-duration="1s " data-wow-delay="0.4s "></div>
+      <div id="particles-js" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></div>
+      <div class="row wow fadeIn " data-wow-duration="1s " data-wow-delay="0.4s ">
+        <div class="col-lg-4 col-md-6 ">
+          <div class="cs-card cs-style2 ">
+            <div class="cs-card_number cs-accent_bg cs-white_color cs-center cs-primary_font cs-font_22 cs-bold ">
+              1
+              <div class="cs-card_tick ">
+                <svg width="18 " height="19 " viewBox="0 0 18 19 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                  <path d="M0.899994 9.90957C0.899994 5.43606 4.52649 1.80957 8.99999 1.80957C13.4735 1.80957 17.1 5.43606 17.1 9.90957C17.1 14.3831 13.4735 18.0096 8.99999 18.0096C4.52649 18.0096 0.899994 14.3831 0.899994 9.90957Z " fill="#06182C
+                                " stroke="#0A2540 " stroke-width="2 "/>
+                  <path d="M8.99999 1.80957C4.52649 1.80957 0.899994 5.43606 0.899994 9.90957C0.899994 14.3831 4.52649 18.0096 8.99999 18.0096C13.4735 18.0096 17.1 14.3831 17.1 9.90957C17.1 5.43606 13.4735 1.80957 8.99999 1.80957ZM12.4755 5.60348L14.1584
+                                7.28636L8.90211 12.5437L7.2291 14.2157L5.54622 12.5328L3.84158 10.8271L5.51359 9.15512L7.21824 10.8608L12.4755 5.60348Z " fill="white "/>
+                </svg>                                                   
+              </div>
+            </div>
+            <div class="cs-height_30 cs-height_lg_15 "></div>
+            <div class="cs-card_in cs-light_bg ">
+              <h3 class="cs-gradient_color cs-font_18 cs-font_16_sm cs-m0 "></h3>
+              <div class="cs-height_5 cs-height_lg_5 "></div>
+              <h2 class="cs-font_24 cs-font_16_sm cs-m0 ">Phase 1</h2>
+              <div class="cs-height_10 cs-height_lg_10 "></div>
+              <p class="cs-m0 " style="color: #fff;font-weight: bold;">
+              
+    Uniswap Launch
+    <br>
+    The Inception of the Idea
+    <br>
+    Community Forming
+    <br>
+    Decentralized Approach
+    <br>
+    No CEX listings (Decentralization)
+
+
+                </ul>
+              </p>
+            </div>
+          </div>
+          <div class="cs-height_25 cs-height_lg_25 "></div>
+        </div>
+        <div class="col-lg-4 col-md-6 ">
+          <div class="cs-card cs-style2 ">
+            <div class="cs-card_number cs-accent_bg cs-white_color cs-center cs-primary_font cs-font_22 cs-bold ">
+              2
+              <div class="cs-card_tick ">
+                <svg width="18 " height="19 " viewBox="0 0 18 19 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                  <path d="M0.899994 9.90957C0.899994 5.43606 4.52649 1.80957 8.99999 1.80957C13.4735 1.80957 17.1 5.43606 17.1 9.90957C17.1 14.3831 13.4735 18.0096 8.99999 18.0096C4.52649 18.0096 0.899994 14.3831 0.899994 9.90957Z " fill="#06182C
+                                " stroke="#0A2540 " stroke-width="2 "/>
+                  <path d="M8.99999 1.80957C4.52649 1.80957 0.899994 5.43606 0.899994 9.90957C0.899994 14.3831 4.52649 18.0096 8.99999 18.0096C13.4735 18.0096 17.1 14.3831 17.1 9.90957C17.1 5.43606 13.4735 1.80957 8.99999 1.80957ZM12.4755 5.60348L14.1584
+                                7.28636L8.90211 12.5437L7.2291 14.2157L5.54622 12.5328L3.84158 10.8271L5.51359 9.15512L7.21824 10.8608L12.4755 5.60348Z " fill="white "/>
+                </svg>                                   
+              </div>
+            </div>
+            <div class="cs-height_30 cs-height_lg_15 "></div>
+            <div class="cs-card_in cs-light_bg ">
+              <h3 class="cs-gradient_color cs-font_18 cs-font_16_sm cs-m0 "></h3>
+              <div class="cs-height_5 cs-height_lg_5 "></div>
+              <h2 class="cs-font_24 cs-font_16_sm cs-m0 ">Phase 2</h2>
+              <div class="cs-height_10 cs-height_lg_10 "></div>
+              <p class="cs-m0 " style="font-weight: bold;color: #fff;">
+                
+    Website Upgrade
+    <br>
+    Marketing Phase 1
+    <br>
+    Community Forming
+    <br>
+    Twitter/X Trending
+    <br>
+    Surprise Announcement
+
+              </p>
+            </div>
+          </div>
+          <div class="cs-height_25 cs-height_lg_25 "></div>
+        </div>
+        <div class="col-lg-4 col-md-6 ">
+          <div class="cs-card cs-style2 ">
+            <div class="cs-card_number cs-accent_bg cs-white_color cs-center cs-primary_font cs-font_22 cs-bold ">
+              3
+              <div class="cs-card_tick ">
+                <svg width="18 " height="19 " viewBox="0 0 18 19 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                  <path d="M0.899994 9.90957C0.899994 5.43606 4.52649 1.80957 8.99999 1.80957C13.4735 1.80957 17.1 5.43606 17.1 9.90957C17.1 14.3831 13.4735 18.0096 8.99999 18.0096C4.52649 18.0096 0.899994 14.3831 0.899994 9.90957Z " fill="#06182C
+                                " stroke="#0A2540 " stroke-width="2 "/>
+                  <path d="M8.99999 1.80957C4.52649 1.80957 0.899994 5.43606 0.899994 9.90957C0.899994 14.3831 4.52649 18.0096 8.99999 18.0096C13.4735 18.0096 17.1 14.3831 17.1 9.90957C17.1 5.43606 13.4735 1.80957 8.99999 1.80957ZM12.4755 5.60348L14.1584
+                                7.28636L8.90211 12.5437L7.2291 14.2157L5.54622 12.5328L3.84158 10.8271L5.51359 9.15512L7.21824 10.8608L12.4755 5.60348Z " fill="white "/>
+                </svg>                                 
+              </div>
+            </div>
+            <div class="cs-height_30 cs-height_lg_15 "></div>
+            <div class="cs-card_in cs-light_bg ">
+              <h3 class="cs-gradient_color cs-font_18 cs-font_16_sm cs-m0 "></h3>
+              <div class="cs-height_5 cs-height_lg_5 "></div>
+              <h2 class="cs-font_24 cs-font_16_sm cs-m0 ">Phase 3</h2>
+              <div class="cs-height_10 cs-height_lg_10 "></div>
+              <p class="cs-m0 " style="font-weight: bold;color: #fff;">
+                
+    Strategical Partnerships
+    <br>
+    YouTube & TikTok Exposure
+    <br>
+    Back to True Decentralization
+    <br>
+    The Future In The Past
+    <br>
+    Roadmap V2
+
+              </p>
+            </div>
+          </div>
+          <div class="cs-height_25 cs-height_lg_25 "></div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- End Goals -->
+  <!-- <div class="container-xxl py-5" style="background-color: #ECC874;padding-bottom: 100px;" id="tokenomics">
+    <div class="container">
+        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+          <h2 class="cs-section_subtitle cs-m0 cs-font_30 cs-font_24_sm " style="color: #FC427B;">🐻  Live New Pairs Tokenomics 🐻</h2>
+          <h2 class="cs-section_title cs-font_16 cs-font_14_sm cs-gradient_color ">420,690,000,000,000 total supply<br>0/0 tax</h2>
+            <p class="text-primary fs-5 mb-5"></p>
+        </div>
+        <div class="row g-5">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="d-flex align-items-start">
+                    
+                    <div class="ps-4">
+                        <h5 class="mb-3" style="color: #FC427B;">⛈️ Max Wallet</h5>
+                        <p class="mb-4" style="color: #FC427B;">2%</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="d-flex align-items-start" >
+                    
+                    <div class="ps-4">
+                        <h5 class="mb-3" style="color: #FC427B;">⛈️ Max tx</h5>
+                        <p class="mb-4" style="color: #FC427B;">2%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="d-flex align-items-start">
+                    
+                    <div class="ps-4">
+                        <h5 class="mb-3" style="color: #FC427B;">⛈️ Taxes</h5>
+                        <p class="mb-4" style="color: #FC427B;">7%</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div> -->
+  <!-- Start Contact -->
+  
+  <!-- End Contact -->
+  <!-- Start CTA -->
+  <!-- community section -->
+  <!-- <div class="cs-height_100 cs-height_lg_70 "></div>
+  <div class="cs-footer_wrap " data-src="assets/img/ " style="background-color:  #191919;" id="contact">
+    <div class="container wow fadeIn " data-wow-duration="1s " data-wow-delay="0.2s ">
+      <div class="cs-cta cs-style1 cs-accent_bg text-center ">
+        <h2 class="cs-cta_title cs-white_color cs-font_64 cs-font_36_sm cs-m0 ">Join our community for <br>Updates</h2>
+        <div class="cs-height_10 cs-height_lg_10 "></div>
+        <div class="cs-cta_subtitle cs-white_color ">Join our early development of this project by following us on Twitter and joining our Telegram.</div>
+        <div class="cs-height_30 cs-height_lg_30 "></div>
+        <div class="cs-cta_btns cs-center ">
+          <a href="tglink" class="cs-btn cs-btn_filed cs-white_btn_2 ">
+         
+            <span>Join Our Telegram</span>
+          </a>
+          <a href="twitterlink" class="cs-btn cs-btn_filed cs-white_btn ">
+
+            <span>Follow us on Twitter</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    End CTA -->
+    <!-- Start Footer -->
+    <!-- <footer class="footer text-center ">
+     
+      <div class="cs-height_25 cs-height_lg_25 "></div>
+    </footer> -->
+    <footer style="background: none;background-image: url(/assets/img/ftbg.jpg);padding:30px 0">
+       <div class="container ">
+        <!-- <div class="cs-height_100 cs-height_lg_70 "></div> -->
+        <!-- <div class="cs-footer_logo wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.2s ">
+          <img src="d.gif" alt="gif">
+        </div> -->
+        <div class="cs-height_25 cs-height_lg_25 "></div>
+       <div style="text-align: center;">
+      <img src="assets/img/nolaa4.png" class="shake_img" style="max-width:180px;width: 100%;" alt="Hero Image">
+      </div>
+      <!-- social icon -->
+        <!-- <div class="cs-social_btns cs-center wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.3s ">
+          
+          <a href="tglink" class="cs-center cs-primary_color cs-accent_bg_hover cs-light_bg cs-white_color_hover ">
+            <svg xmlns="http://www.w3.org/2000/svg " viewBox="0 0 256 256 " id="IconChangeColor " height="200 " width="200 "><rect width="256 " height="256 " fill="none "></rect><path d="M88,134.9,177.9,214a8,8,0,0,0,13.1-4.2L228.6,45.6a8,8,0,0,0-10.7-9.2L33.3,108.9c-7.4,2.9-6.4,13.7,1.4,15.3Z" fill="#ECC874 " stroke="#ECC874 " stroke-linecap="round " stroke-linejoin="round " stroke-width="12 " id="mainIconPathAttribute " filter="url(#shadow) "></path><line x1="88 " y1="134.9 " x2="224.1 " y2="36.6 " fill="none
+                                " stroke="#191919 " stroke-linecap="round " stroke-linejoin="round " stroke-width="12 "></line><path d="M132.9,174.4l-31.2,31.2A8,8,0,0,1,88,200V134.9 " fill="#ECC874 " stroke="#ECC874 " stroke-linecap="round " stroke-linejoin="round
+                                " stroke-width="12 " id="mainIconPathAttribute "></path><filter id="shadow "><feDropShadow id="shadowValue " stdDeviation=".5 " dx="0 " dy="0 " flood-color="black "></feDropShadow></filter><filter id="shadow "><feDropShadow id="shadowValue
+                                " stdDeviation=".5 " dx="0 " dy="0 " flood-color="black "></feDropShadow></filter></svg>
+          </a>
+          <a href="twitterlink" class="cs-center cs-primary_color cs-accent_bg_hover cs-light_bg cs-white_color_hover ">
+            <svg xmlns="http://www.w3.org/2000/svg " aria-hidden="true "  role="img " width="24 " height="24 " preserveAspectRatio="xMidYMid meet " viewBox="0 0 24 24 "><path fill="#ECC874 " d="M23.643 4.937c-.835.37-1.732.62-2.675.733a4.67 4.67
+                                0 0 0 2.048-2.578a9.3 9.3 0 0 1-2.958 1.13a4.66 4.66 0 0 0-7.938 4.25a13.229 13.229 0 0 1-9.602-4.868c-.4.69-.63 1.49-.63 2.342A4.66 4.66 0 0 0 3.96 9.824a4.647 4.647 0 0 1-2.11-.583v.06a4.66 4.66 0 0 0 3.737 4.568a4.692 4.692
+                                0 0 1-2.104.08a4.661 4.661 0 0 0 4.352 3.234a9.348 9.348 0 0 1-5.786 1.995a9.5 9.5 0 0 1-1.112-.065a13.175 13.175 0 0 0 7.14 2.093c8.57 0 13.255-7.098 13.255-13.254c0-.2-.005-.402-.014-.602a9.47 9.47 0 0 0 2.323-2.41l.002-.003Z " fill="#ECC874" stroke="#ECC874 " /></svg>                
+          </a>
+          <a href="https://dexscreener.com/ethereum/0x0000000000000000000000000000" class="cs-center cs-primary_color cs-accent_bg_hover cs-light_bg cs-white_color_hover ">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 168.3 193.8" style="enable-background:new 0 0 168.3 193.8;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FF007A;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FF007A;}
+</style>
+<path class="st0" d="M66,44.1c-2.1-0.3-2.2-0.4-1.2-0.5c1.9-0.3,6.3,0.1,9.4,0.8c7.2,1.7,13.7,6.1,20.6,13.8l1.8,2.1l2.6-0.4
+	c11.1-1.8,22.5-0.4,32,4c2.6,1.2,6.7,3.6,7.2,4.2c0.2,0.2,0.5,1.5,0.7,2.8c0.7,4.7,0.4,8.2-1.1,10.9c-0.8,1.5-0.8,1.9-0.3,3.2
+	c0.4,1,1.6,1.7,2.7,1.7c2.4,0,4.9-3.8,6.1-9.1l0.5-2.1l0.9,1c5.1,5.7,9.1,13.6,9.7,19.2l0.2,1.5l-0.9-1.3c-1.5-2.3-2.9-3.8-4.8-5.1
+	c-3.4-2.3-7-3-16.5-3.5c-8.6-0.5-13.5-1.2-18.3-2.8c-8.2-2.7-12.4-6.2-22.1-19.1c-4.3-5.7-7-8.8-9.7-11.4
+	C79.6,48.3,73.7,45.3,66,44.1z"/>
+<path class="st0" d="M140.5,56.8c0.2-3.8,0.7-6.3,1.8-8.6c0.4-0.9,0.8-1.7,0.9-1.7c0.1,0-0.1,0.7-0.4,1.5c-0.8,2.2-0.9,5.3-0.4,8.8
+	c0.7,4.5,1,5.1,5.8,10c2.2,2.3,4.8,5.2,5.8,6.4l1.7,2.2l-1.7-1.6c-2.1-2-6.9-5.8-8-6.3c-0.7-0.4-0.8-0.4-1.3,0.1
+	c-0.4,0.4-0.5,1-0.5,3.9c-0.1,4.5-0.7,7.3-2.2,10.2c-0.8,1.5-0.9,1.2-0.2-0.5c0.5-1.3,0.6-1.9,0.6-6.2c0-8.7-1-10.8-7.1-14.3
+	c-1.5-0.9-4.1-2.2-5.6-2.9c-1.6-0.7-2.8-1.3-2.7-1.3c0.2-0.2,6.1,1.5,8.4,2.5c3.5,1.4,4.1,1.5,4.5,1.4
+	C140.2,60.1,140.4,59.3,140.5,56.8z"/>
+<path class="st0" d="M70.1,71.7c-4.2-5.8-6.9-14.8-6.3-21.5l0.2-2.1l1,0.2c1.8,0.3,4.9,1.5,6.4,2.4c4,2.4,5.8,5.7,7.5,13.9
+	c0.5,2.4,1.2,5.2,1.5,6.1c0.5,1.5,2.4,5,4,7.2c1.1,1.6,0.4,2.4-2.1,2.2C78.5,79.7,73.4,76.2,70.1,71.7z"/>
+<path class="st0" d="M135.4,115.2c-19.8-8-26.8-14.9-26.8-26.6c0-1.7,0.1-3.1,0.1-3.1c0.1,0,0.8,0.6,1.7,1.3c4,3.2,8.5,4.6,21,6.4
+	c7.3,1.1,11.5,1.9,15.3,3.2c12.1,4,19.6,12.2,21.4,23.3c0.5,3.2,0.2,9.3-0.6,12.5c-0.7,2.5-2.7,7.1-3.2,7.2c-0.1,0-0.3-0.5-0.3-1.3
+	c-0.2-4.2-2.3-8.2-5.8-11.3C154,123.2,148.6,120.5,135.4,115.2z"/>
+<path class="st0" d="M121.4,118.5c-0.2-1.5-0.7-3.4-1-4.2l-0.5-1.5l0.9,1.1c1.3,1.5,2.3,3.3,3.2,5.8c0.7,1.9,0.7,2.5,0.7,5.6
+	c0,3-0.1,3.7-0.7,5.4c-1,2.7-2.2,4.6-4.2,6.7c-3.6,3.7-8.3,5.7-15,6.6c-1.2,0.1-4.6,0.4-7.6,0.6c-7.5,0.4-12.5,1.2-17,2.8
+	c-0.6,0.2-1.2,0.4-1.3,0.3c-0.2-0.2,2.9-2,5.4-3.2c3.5-1.7,7.1-2.6,15-4c3.9-0.6,7.9-1.4,8.9-1.8C118.1,135.6,123,127.9,121.4,118.5
+	z"/>
+<path class="st0" d="M130.5,134.6c-2.6-5.7-3.2-11.1-1.8-16.2c0.2-0.5,0.4-1,0.6-1c0.2,0,0.8,0.3,1.4,0.7c1.2,0.8,3.7,2.2,10.1,5.7
+	c8.1,4.4,12.7,7.8,15.9,11.7c2.8,3.4,4.5,7.3,5.3,12.1c0.5,2.7,0.2,9.2-0.5,11.9c-2.2,8.5-7.2,15.3-14.5,19.2c-1.1,0.6-2,1-2.1,1
+	c-0.1,0,0.3-1,0.9-2.2c2.4-5.1,2.7-10,0.9-15.5c-1.1-3.4-3.4-7.5-8-14.4C133.2,139.6,131.9,137.5,130.5,134.6z"/>
+<path class="st0" d="M56,165.2c7.4-6.2,16.5-10.6,24.9-12c3.6-0.6,9.6-0.4,12.9,0.5c5.3,1.4,10.1,4.4,12.6,8.1
+	c2.4,3.6,3.5,6.7,4.6,13.6c0.4,2.7,0.9,5.5,1,6.1c0.8,3.6,2.4,6.4,4.4,7.9c3.1,2.3,8.5,2.4,13.8,0.4c0.9-0.3,1.7-0.6,1.7-0.5
+	c0.2,0.2-2.5,2-4.3,2.9c-2.5,1.3-4.5,1.7-7.2,1.7c-4.8,0-8.9-2.5-12.2-7.5c-0.7-1-2.1-3.9-3.3-6.6c-3.5-8.1-5.3-10.5-9.4-13.2
+	c-3.6-2.3-8.2-2.8-11.7-1.1c-4.6,2.2-5.8,8.1-2.6,11.7c1.3,1.5,3.7,2.7,5.7,3c3.7,0.5,6.9-2.4,6.9-6.1c0-2.4-0.9-3.8-3.3-4.9
+	c-3.2-1.4-6.7,0.2-6.6,3.3c0,1.3,0.6,2.1,1.9,2.7c0.8,0.4,0.8,0.4,0.2,0.3c-2.9-0.6-3.6-4.2-1.3-6.5c2.8-2.8,8.7-1.6,10.7,2.3
+	c0.8,1.6,0.9,4.8,0.2,6.8c-1.7,4.4-6.5,6.7-11.4,5.4c-3.3-0.9-4.7-1.8-8.7-5.9c-7-7.2-9.7-8.6-19.7-10.1l-1.9-0.3L56,165.2z"/>
+<path class="st1" d="M3.4,4.3c23.3,28.3,59.2,72.3,61,74.7c1.5,2,0.9,3.9-1.6,5.3c-1.4,0.8-4.3,1.6-5.7,1.6c-1.6,0-3.5-0.8-4.8-2.1
+	c-0.9-0.9-4.8-6.6-13.6-20.3c-6.7-10.5-12.4-19.2-12.5-19.3C25.8,44,25.8,44,38,65.8C45.7,79.5,48.2,84.4,48.2,85c0,1.3-0.4,2-2,3.8
+	c-2.7,3-3.9,6.4-4.8,13.5c-1,7.9-3.7,13.5-11.4,23c-4.5,5.6-5.2,6.6-6.3,8.9c-1.4,2.8-1.8,4.4-2,8c-0.2,3.8,0.2,6.2,1.3,9.8
+	c1,3.2,2.1,5.3,4.8,9.4c2.3,3.6,3.7,6.3,3.7,7.3c0,0.8,0.2,0.8,3.8,0c8.6-2,15.7-5.4,19.6-9.6c2.4-2.6,3-4,3-7.6
+	c0-2.3-0.1-2.8-0.7-4.2c-1-2.2-2.9-4-7-6.8c-5.4-3.7-7.7-6.7-8.3-10.7c-0.5-3.4,0.1-5.7,3.1-12c3.1-6.5,3.9-9.2,4.4-15.8
+	c0.3-4.2,0.8-5.9,2-7.2c1.3-1.4,2.4-1.9,5.5-2.3c5.1-0.7,8.4-2,11-4.5c2.3-2.1,3.3-4.2,3.4-7.3l0.1-2.3L70.1,77C65.4,71.6,0.3,0,0,0
+	C-0.1,0,1.5,1.9,3.4,4.3z M34.1,146.5c1.1-1.9,0.5-4.3-1.3-5.5c-1.7-1.1-4.3-0.6-4.3,0.9c0,0.4,0.2,0.8,0.8,1c0.9,0.5,1,1,0.3,2.1
+	c-0.7,1.1-0.7,2.1,0.2,2.8C31.2,148.9,33.1,148.3,34.1,146.5z"/>
+<path class="st1" d="M74.6,93.9c-2.4,0.7-4.7,3.3-5.4,5.9c-0.4,1.6-0.2,4.5,0.5,5.4c1.1,1.4,2.1,1.8,4.9,1.8
+	c5.5,0,10.2-2.4,10.7-5.3c0.5-2.4-1.6-5.7-4.5-7.2C79.3,93.7,76.2,93.4,74.6,93.9z M81,98.9c0.8-1.2,0.5-2.5-1-3.4
+	c-2.7-1.7-6.8-0.3-6.8,2.3c0,1.3,2.1,2.7,4.1,2.7C78.6,100.5,80.4,99.7,81,98.9z"/>
+</svg>
+            
+          </a>
+           <a href="" class="cs-center cs-primary_color cs-accent_bg_hover cs-light_bg cs-white_color_hover ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="121.378" height="121.333" viewBox="0 0 121.378 121.333">
+              <g id="bscscan-logo-circle" transform="translate(-219.378 -213.334)">
+                <path id="Path_1" data-name="Path 1" d="M244.6,271.1a5.144,5.144,0,0,1,5.168-5.143l8.568.028a5.151,5.151,0,0,1,5.151,5.151v32.4c.965-.286,2.2-.591,3.559-.911a4.292,4.292,0,0,0,3.309-4.177V258.261a5.152,5.152,0,0,1,5.151-5.152H284.1a5.152,5.152,0,0,1,5.151,5.152v37.3s2.15-.87,4.243-1.754a4.3,4.3,0,0,0,2.625-3.957V245.383a5.151,5.151,0,0,1,5.15-5.151h8.585A5.151,5.151,0,0,1,315,245.383V282c7.443-5.394,14.986-11.882,20.972-19.683a8.646,8.646,0,0,0,1.316-8.072,60.636,60.636,0,1,0-109.855,50.108,7.668,7.668,0,0,0,7.316,3.79c1.624-.143,3.646-.345,6.05-.627a4.29,4.29,0,0,0,3.805-4.258V271.1" fill="#12161c"/>
+                <path id="Path_2" data-name="Path 2" d="M244.417,323.061A60.656,60.656,0,0,0,340.756,274c0-1.4-.065-2.778-.158-4.152-22.163,33.055-63.085,48.508-96.181,53.213" fill="#f0b90b"/>
+              </g>
+            </svg>              
+          </a> -->
+          <!-- <a href="https://www.dextools.io/app/en/ether/pair-explorer/0x5dcb33937a543899e160fbd0e8f7e3bb119bef31" class="cs-center cs-primary_color cs-accent_bg_hover cs-light_bg cs-white_color_hover ">
+            <svg fill="none" height="2500" viewBox="0 -.058 754.779 867.058" width="2174" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="m280.395 49.025c-51.649 26.905-93.905 49.672-93.896 50.598.023 2.39 123.959 65.156 128.358 65.003 2.001-.067 16.517-6.749 32.256-14.847l28.621-14.721 31.258 16.067 31.256 16.07 51.188-23.001c77.13-34.659 85.141-38.457 83.885-39.733-1.666-1.693-29.331-16.555-104.388-56.07-36.274-19.098-71.481-37.823-78.24-41.612-6.758-3.789-13.21-6.837-14.337-6.778s-44.311 22.12-95.961 49.024zm-226.532 117.306-53.766 27.772v121.886c0 67.038.706 121.885 1.572 121.885.863 0 27.316-11.467 58.783-25.482l57.213-25.482v-128.476l27.958 15.232a33224.294 33224.294 0 0 0 64.671 35.109l36.712 19.877 16.336-7.387a3822.03 3822.03 0 0 0 30.674-14.056c7.885-3.672 27.241-12.39 43.012-19.377 15.771-6.99 30.37-14.019 32.44-15.621 2.75-2.128-30.782-20.658-124.025-68.54-70.285-36.093-130.046-65.509-132.802-65.368s-29.206 12.752-58.778 28.028zm529.148 7.799c-36.618 16.531-66.604 30.717-66.638 31.526-.032.808 19.926 12.675 44.354 26.367 24.426 13.695 44.412 25.632 44.412 26.531 0 .897-21.615 11.37-48.03 23.278-26.419 11.905-93.194 42.061-148.393 67.014l-184.954 83.602c-46.525 21.032-88.462 39.989-93.193 42.132-95.03 43.019-121.15 54.956-124.737 57.005-3.607 2.063-4.424 14.048-5.066 74.201l-.766 71.744 48.08 24.498 48.079 24.497 66.669-30.088c36.669-16.547 66.669-30.953 66.669-32.014 0-1.058-6.776-5.473-15.054-9.815-8.282-4.342-25.378-13.954-37.995-21.364-12.616-7.411-25.196-14.21-27.958-15.112-2.761-.899-4.98-2.472-4.935-3.498.046-1.023 29.404-14.968 65.236-30.991 69.597-31.117 122.858-55.1 237.202-106.809a305577.39 305577.39 0 0 1 153.411-69.31c44.948-20.288 97.208-43.983 116.134-52.655l34.41-15.767.765-72.561.769-72.558-48.765-25.03c-26.822-13.765-49.748-24.994-50.95-24.953-1.201.038-32.141 13.595-68.756 30.13zm153.872 261.772c-7.186 3.51-21.38 10.082-31.542 14.603s-29.446 13.222-42.852 19.339l-24.374 11.117-.556 63.702c-.307 35.035-1.597 63.545-2.867 63.36-2.885-.429-48.567-23.857-94.487-48.463-33.143-17.757-35.225-18.463-43.013-14.606-4.502 2.231-31.413 14.3-59.801 26.825-28.389 12.523-52.541 23.587-53.677 24.589-1.133 1 56.002 31.967 126.97 68.819l129.029 67.003 55.119-28.513c30.312-15.68 56.088-29.983 57.275-31.782 2.672-4.045 2.443-242.93-.232-242.607-1.058.127-7.806 3.104-14.992 6.614zm-305.227 280.391a25013.26 25013.26 0 0 0 -28.675 12.349c-28.856 12.484-23.201 12.898-57.531-4.192-22.865-11.382-32.721-14.894-36.999-13.189-3.209 1.278-30.826 13.703-61.376 27.61-30.548 13.907-56.602 25.285-57.898 25.285-12.817 0 8.491 12.731 90.714 54.207l96.428 48.637 40.572-20.03c22.315-11.017 67.323-33.078 100.021-49.024 32.695-15.95 59.042-29.413 58.549-29.921-.497-.506-27.893-14.574-60.883-31.262l-59.982-30.338z" fill="#05a3c9" fill-rule="evenodd"/></svg>             
+          </a> -->
+        </div> 
+      </div>
+      <div class="cs-height_45 cs-height_lg_25 "></div>
+      <div class="container ">
+        <div class="cs-copyright text-center wow fadeIn " data-wow-duration="1s " data-wow-delay="0.5s "><span class="cs-primary_font cs-primary_color ">Tom@proton.me</span></div>
+        <div class="cs-copyright text-center wow fadeIn " data-wow-duration="1s " data-wow-delay="0.5s "><span class="cs-primary_font cs-primary_color ">Tom © 2024</span></div>
+      </div>
+    </section>
+    <!-- End Footer -->
+  </div> 
+
+  <!-- Start Connect Modal -->
+  <!-- <div class="cs-modal " data-modal="connect_wallet ">
+    <div class="cs-modal_in ">
+      <div class="cs-modal_container cs-white_bg ">
+        <button class="cs-close_modal cs-center cs-primary_bg ">
+          <svg width="12 " height="12 " viewBox="0 0 12 12 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+            <path d="M11.7071 1.70711C12.0976 1.31658 12.0976 0.683417 11.7071 0.292893C11.3166 -0.0976311 10.6834 -0.0976311 10.2929 0.292893L11.7071 1.70711ZM0.292893 10.2929C-0.0976311 10.6834 -0.0976311 11.3166 0.292893 11.7071C0.683417 12.0976
+                                1.31658 12.0976 1.70711 11.7071L0.292893 10.2929ZM1.70711 0.292893C1.31658 -0.0976311 0.683417 -0.0976311 0.292893 0.292893C-0.0976311 0.683417 -0.0976311 1.31658 0.292893 1.70711L1.70711 0.292893ZM10.2929 11.7071C10.6834 12.0976
+                                11.3166 12.0976 11.7071 11.7071C12.0976 11.3166 12.0976 10.6834 11.7071 10.2929L10.2929 11.7071ZM10.2929 0.292893L0.292893 10.2929L1.70711 11.7071L11.7071 1.70711L10.2929 0.292893ZM0.292893 1.70711L10.2929 11.7071L11.7071 10.2929L1.70711
+                                0.292893L0.292893 1.70711Z " fill="white "/>
+          </svg>            
+        </button>
+        <div class="cs-wallet_secton text-center ">
+          <h2 class="cs-font_22 text-uppercase cs-normal cs-m0 ">Connect Wallet</h2>
+          <div class="cs-height_25 cs-height_lg_25 "></div>
+          <ul class="cs-list cs-style1 cs-mp0 ">
+            <li><a href="# "><img src="assets/img/metamask.svg " alt="Logo "></a></li>
+            <li><a href="# "><img src="assets/img/coinbase.svg " alt="Logo "></a></li>
+            <li><a href="# "><img src="assets/img/trustwallet.svg " alt="Logo "></a></li>
+            <li><a href="# "><img src="assets/img/walletconnect.svg " alt="Logo "></a></li>
+          </ul>
+          <div class="cs-height_15 cs-height_lg_15 "></div>
+          <p class="cs-m0 ">Wallet are many variations of pass <br>ges of availabl.</p>
+        </div>
+      </div>
+    </div>dexscreener.com/ethereum/
+  </div> -->
+  <!-- Start Connect Modal -->
+
+  <!-- pop up modal  -->
+  <!-- modal section -->
+
+
+       
+  <!-- pop up modal  -->
+  <!-- Start Mint Modal -->
+  <!-- <div class="cs-modal " data-modal="mint ">
+    <div class="cs-modal_in ">
+      <div class="cs-modal_container cs-white_bg ">
+        <button class="cs-close_modal cs-center cs-primary_bg ">
+          <svg width="12 " height="12 " viewBox="0 0 12 12 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+            <path d="M11.7071 1.70711C12.0976 1.31658 12.0976 0.683417 11.7071 0.292893C11.3166 -0.0976311 10.6834 -0.0976311 10.2929 0.292893L11.7071 1.70711ZM0.292893 10.2929C-0.0976311 10.6834 -0.0976311 11.3166 0.292893 11.7071C0.683417 12.0976
+                                1.31658 12.0976 1.70711 11.7071L0.292893 10.2929ZM1.70711 0.292893C1.31658 -0.0976311 0.683417 -0.0976311 0.292893 0.292893C-0.0976311 0.683417 -0.0976311 1.31658 0.292893 1.70711L1.70711 0.292893ZM10.2929 11.7071C10.6834 12.0976
+                                11.3166 12.0976 11.7071 11.7071C12.0976 11.3166 12.0976 10.6834 11.7071 10.2929L10.2929 11.7071ZM10.2929 0.292893L0.292893 10.2929L1.70711 11.7071L11.7071 1.70711L10.2929 0.292893ZM0.292893 1.70711L10.2929 11.7071L11.7071 10.2929L1.70711
+                                0.292893L0.292893 1.70711Z " fill="white "/>
+          </svg>            
+        </button>
+        <div class="cs-mint_secton ">
+          <h2 class="cs-font_22 text-uppercase cs-normal cs-m0 text-center ">Collect your NFT before <br>the deadline.</h2>
+          <div class="cs-height_25 cs-height_lg_25 "></div>
+          <div class="cs-mint_avatar text-center "><img src="assets/img/avatar_dd.jpg " alt=" "></div>
+          <div class="cs-height_50 cs-height_lg_30 "></div>
+          <ul class="cs-list cs-style2 cs-mp0 cs-primary_color cs-primary_font ">
+            <li>
+              <div class="cs-list_left ">Remaining</div>
+              <div class="cs-list_right ">725 / 725 Minted</div>
+            </li>
+            <li>
+              <div class="cs-list_left ">Quantity / <span class="cs-accent_color ">0.25 ETH</span></div>
+              <div class="cs-list_right ">
+                <div class="cs-quantity ">
+                  <button class="cs-quantity_btn cs-center ">
+                    <svg xmlns="http://www.w3.org/2000/svg " aria-hidden="true "co role="img " width="1em " height="1em " preserveAspectRatio="xMidYMid meet " viewBox="0 0 24 24 "><path fill="none " stroke="currentColor " stroke-linecap="round
+                                " stroke-width="2 " d="M20 12H4 "/></svg>
+                  </button>
+                  <input type="text " value="1 " class="cs-quantity_number ">
+                  <button class="cs-quantity_btn cs-center ">
+                    <svg xmlns="http://www.w3.org/2000/svg " aria-hidden="true " role="img " width="1em " height="1em " preserveAspectRatio="xMidYMid meet " viewBox="0 0 24 24 "><path fill="none " stroke="currentColor " stroke-linecap="round
+                                " stroke-width="2 " d="M12 20v-8m0 0V4m0 8h8m-8 0H4 "/></svg>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="cs-list_left ">Total Price</div>
+              <div class="cs-list_right ">0.5 ETH</div>
+            </li>
+          </ul>
+          <div class="cs-height_25 cs-height_lg_25 "></div>
+          <button class="cs-btn cs-btn_filed cs-accent_btn text-center text-uppercase w-100 "><span>Mint Now</span></button>
+          <div class="cs-height_15 cs-height_lg_15 "></div>
+          <p class="cs-m0 text-center ">Presale & whitelist : Soldout</p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- Start Mint Modal -->
+
+  <!-- Script -->
+  <script>
+
+    // modal content
+ window.onload = function () {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "block";
+
+            // Close the modal when clicking outside of it
+            window.onclick = function (event) {
+              var closeButton = document.getElementById("closeModal");
+              var closingAudio = document.getElementById("closingAudio");
+
+              const yesButton = document.getElementById("yesButton");
+              const noButton = document.getElementById("noButton");
+
+              if (yesButton) {
+                modal.style.display = "none";
+                closingAudio.play();
+              } else {
+                if (noButton) {
+                  modal.style.display = "none";
+                  closingAudio.play();
+                }
+              }
+
+              // yesButton.addEventListener("click", function () {
+              //   modal.style.display = "none";
+              //   closingAudio.play();
+              // });
+
+              // // Hide the modal when "No" is clicked
+              // noButton.addEventListener("click", function () {
+              //   modal.style.display = "none";
+              // });
+            };
+          };
+
+
+
+    particlesJS('particles-js', {
+    particles: {
+      number: {
+        value: 150,
+        density: {
+          enable: true,
+          value_area: 800
+        }
+      },
+      color: {
+        value: '#4A74DB'
+      },
+      shape: {
+        type: 'circle',
+        stroke: {
+          width: 0,
+          color: '#ffffff'
+        },
+        polygon: {
+          nb_sides: 5
+        },
+        image: {
+          src: 'img/github.svg',
+          width: 100,
+          height: 100
+        }
+      },
+      opacity: {
+        value: 0.5,
+        random: false,
+        anim: {
+          enable: false,
+          speed: 1,
+          opacity_min: 0.1,
+          sync: false
+        }
+      },
+      size: {
+        value: 3,
+        random: true,
+        anim: {
+          enable: false,
+          speed: 40,
+          size_min: 0.1,
+          sync: false
+        }
+      },
+      line_linked: {
+        enable: true,
+        distance: 120,
+        color: '#4A74DB',
+        opacity: 0.4,
+        width: 1
+      },
+      move: {
+        enable: true,
+        speed: 6,
+        direction: 'none',
+        random: false,
+        straight: false,
+        out_mode: 'out',
+        bounce: false,
+        attract: {
+          enable: false,
+          rotateX: 600,
+          rotateY: 1200
+        }
+      }
+    },
+    interactivity: {
+      detect_on: 'canvas',
+      events: {
+        onhover: {
+          enable: true,
+          mode: 'grab'
+        },
+        onclick: {
+          enable: true,
+          mode: 'push'
+        },
+        resize: true
+      },
+      modes: {
+        grab: {
+          distance: 140,
+          line_linked: {
+            opacity: 1
+          }
+        },
+        bubble: {
+          distance: 400,
+          size: 40,
+          duration: 2,
+          opacity: 8,
+          speed: 3
+        },
+        repulse: {
+          distance: 200,
+          duration: 0.4
+        },
+        push: {
+          particles_nb: 4
+        },
+        remove: {
+          particles_nb: 2
+        }
+      }
+    },
+    retina_detect: true
+  });
+  
+// video autoplay code
+ window.onload = function() {
+    // Get a reference to the video element
+    var video = document.getElementById("myVideo");
+
+    // Play the video
+    video.play();
+  };
+
+
+  // type writer js for banner paragraph
+  window.onload = function() {
+    const elements = [
+        { selector: 'title1', text: 'TomWith the Best only on Solana!', index: 0 },
+        { selector: 'paragraph1', text: 'Join Tom, the infamous kitty who is dominating the space right now. This feline is ready to visit the moon and beyond, just needs your support! Visit our community and grab a bag, because Tom is our favorite!', index: 0 },
+        // { selector: 'title2', text: 'Title 2', index: 0 },
+        // { selector: 'paragraph2', text: 'This is the second paragraph.', index: 0 }
+    ];
+
+    function typeWriter(element) {
+        if (element.index < element.text.length) {
+            document.getElementById(element.selector).innerHTML += element.text.charAt(element.index);
+            element.index++;
+            setTimeout(() => typeWriter(element), 50);
+        }
+    }
+
+    elements.forEach(el => typeWriter(el));
+};
+
+
+//type writer js for banner heading
+// window.onload = function() {
+    
+// };
+
+
+  </script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="particles.js"></script>
+  <script src="assets/js/plugins/jquery-3.6.0.min.js "></script>
+  <script src="assets/js/plugins/jquery.slick.min.js "></script>
+  <script src="assets/js/plugins/jquery.counter.min.js "></script>
+  <script src="assets/js/plugins/wow.min.js "></script>
+  <script src="assets/js/main.js "></script>
+</body>
+</html>
